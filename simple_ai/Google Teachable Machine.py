@@ -1,6 +1,7 @@
 from keras.models import load_model  # TensorFlow is required for Keras to work
 import cv2  # Install opencv-python
 import numpy as np
+import time
 
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
@@ -15,6 +16,7 @@ class_names = open("MultiLab\simpleai\labels.txt", "r").readlines()
 camera = cv2.VideoCapture(0)
 
 while True:
+    time.sleep(5)
     # Grab the webcamera's image.
     ret, image = camera.read()
 
