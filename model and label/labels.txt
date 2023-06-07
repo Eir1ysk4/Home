@@ -1,3 +1,0 @@
-0 GLASSES
-1 W.O GLASSES
-2 nobody
