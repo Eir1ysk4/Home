@@ -1,4 +1,4 @@
-# Introduction
+# Group 16 (Multi_Disciplinary_Project)
 ## Project
 This project will detect people who wear glasses and who don't wear glasses.
 ## Member
