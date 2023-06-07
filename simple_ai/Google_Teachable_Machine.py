@@ -16,7 +16,7 @@ class_names = open("MultiLab\simpleai\labels.txt", "r").readlines()
 camera = cv2.VideoCapture(0)
 
 while True:
-    time.sleep(5)
+    
     # Grab the webcamera's image.
     ret, image = camera.read()
 
@@ -48,6 +48,8 @@ while True:
     # 27 is the ASCII for the esc key on your keyboard.
     if keyboard_input == 27:
         break
-
+        
+    time.sleep(5)
+    
 camera.release()
 cv2.destroyAllWindows()
