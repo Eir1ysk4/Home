@@ -1,0 +1,47 @@
+import sys
+import time
+import random as rd
+from Adafruit_IO import MQTTClient
+
+AIO_Feed_ID = ["sensor1", "sensor2", "sensor3"]
+AIO_USERNAME = "Eir1ysk4"
+AIO_KEY = "aio_QXAs21P7d5SM78BZp2nZwYH9Hkz0"
+
+def connected(client):
+    print("Connected to AIO!!!")
+    for things in AIO_Feed_ID:
+        client.subscribe(things)
+    
+
+def subscribe(client , userdata , mid , granted_qos):
+    print("Subscribe thanh cong ...")
+
+def disconnected(client):
+    print("Ngat ket noi ...")
+    sys.exit (1)
+
+def message(client , feed_id , payload):
+    print("Nhan du lieu: " + payload)
+
+client = MQTTClient(AIO_USERNAME , AIO_KEY)
+client.on_connect = connected
+client.on_disconnect = disconnected
+client.on_message = message
+client.on_subscribe = subscribe
+
+client.connect()
+client.loop_background()
+
+connected(client)
+i = 0
+while (i <= 4):
+    time.sleep(5)
+    n1 = rd.randint(1,100)
+    n2 = rd.randint(8,80)
+    n3 = rd.randint(6,69)
+    print("calculating")
+    client.publish(AIO_Feed_ID[0],n2)
+    client.publish(AIO_Feed_ID[1],n1)
+    client.publish(AIO_Feed_ID[2],n3)
+    i += 1
+disconnected(client)
