@@ -3,7 +3,7 @@ import time
 import random as rd
 from Adafruit_IO import MQTTClient
 
-AIO_Feed_ID = ["sensor1", "sensor2", "sensor3"]
+AIO_Feed_ID = ["button1", "button2"]
 AIO_USERNAME = "Eir1ysk4"
 AIO_KEY = "aio_QXAs21P7d5SM78BZp2nZwYH9Hkz0"
 
