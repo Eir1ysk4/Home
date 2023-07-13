@@ -1,6 +1,6 @@
 # Group 16 (Multi_Disciplinary_Project)
 ## Project
-This project will detect people who wear glasses and who don't wear glasses.
+This project is an Android application which will track and receive inputs from external sensors. It will also contain facial recognition mechanism to identify existing users.
 ## Member
 
 1) Nguyen Thanh Bao Hung
