@@ -54,8 +54,7 @@ Da.init_BMI_equation()
 
 connected(client)
 
-i = 0
-while (i < 5):
+while (True):
     time.sleep(10)
     valueList = Da.getValue()
     print(valueList)
@@ -63,5 +62,4 @@ while (i < 5):
         client.publish(AIO_FEED_ID[j], valueList[j])
     sr.readTemperature()
     client.publish("body-temperature",float(sr.tempData))
-    i += 1
 disconnected(client)
