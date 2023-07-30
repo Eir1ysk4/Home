@@ -8,7 +8,6 @@ import urllib3
 #import already existed file
 import Sensor_reading as sr
 import IOT_DA as Da
-import AI_face_recognition as AI
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
