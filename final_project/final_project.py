@@ -62,7 +62,7 @@ while (i < 5):
     print(valueList)
     for j in range(len(valueList)):
         client.publish(AIO_FEED_ID[j], valueList[j])
-    # sr.readTemperature()
-    # client.publish("body-temperature",float(sr.tempData))
+    sr.readTemperature()
+    client.publish("body-temperature",float(sr.tempData))
     i += 1
 disconnected(client)
