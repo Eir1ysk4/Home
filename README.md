@@ -11,9 +11,6 @@ This project is an Android application which will track and receive inputs from 
 6) Luong Bao lam
 7) Vu Duc Hung Anh
 ## Content
-1. Create repository in GitHub
-2. Build a simple AI model in Google Teachable Machine
-3. Implement AI inference using Python
-4. Extend the system to mobility camera using your phone
-5. ommit your source code to Github
-6. Submit your Github to Google Sheet
+1. Folder simple_ai and adafruit_io contain past work submitted for in-class excercises and lessons.
+2. Folder final_project contains source code for python program which interacts with adafruit io server and send relevant data to it
+3. Folder android_studio contains source code and related requirements to run the Android app on Android Studio
